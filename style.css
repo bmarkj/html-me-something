@@ -1,0 +1,100 @@
+@font-face {
+    font-family: NFL Saints;
+    src: url(nfl_saints.ttf);
+}
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.85em;
+}
+.container {
+    display: grid;
+    width: 1020px;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-areas:   "header header"
+                          	"nav nav"
+    						"left right"
+    						"footer footer";
+  grid-template-columns: 200px 820px;
+  grid-template-rows: 260px 50px 1225px 25px;
+
+}
+.hero {
+    grid-area: hero;
+}
+header {
+    grid-area: header;
+}
+.tm {
+    position: absolute;
+    left: 450px;
+    top: 200px;
+    z-index: 5;
+}
+nav {
+    grid-area: nav;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: black;
+    border-radius: 8px;
+}
+ul {
+    padding: 12px 0px;
+    margin: 0px;
+}
+li {
+    display: inline;
+    list-style: none;
+    font-size: 1.75em;
+    padding: 50px;
+}
+li a {
+    color: white;
+    padding: 11.5px 10px 10px 10px;
+
+}
+li :hover {
+    background-color: #D4BD8E;
+    color: black;
+}
+.left {
+    grid-area: left;
+}
+.right {
+    grid-area: right;
+}
+article {
+    margin: 0;
+}
+footer {
+    grid-area: footer;
+    clear: left;
+    text-align: center;
+    color: gray;
+    background-color: #D4BD8E;
+    border-radius: 8px;
+}
+footer p {
+    margin: auto;
+    padding: 5px;
+}
+img {
+    float: left;
+    margin: 10px;
+    padding-right: 25px;
+}
+#left img {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+header h1 {
+    font-family: NFL Saints;
+    font-size: 6em;
+}
+header h2 {
+    font-size: 2em;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
